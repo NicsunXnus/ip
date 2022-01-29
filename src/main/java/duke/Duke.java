@@ -1,4 +1,5 @@
 package duke;
+
 import duke.command.Command;
 
 public class Duke {
@@ -7,6 +8,11 @@ public class Duke {
     private TaskList tasks;
     private final Ui ui;
 
+    /**
+     * Creates a new Duke object that takes
+     * in a path of a file as a parameter
+     * @param filePath file
+     */
     public Duke(String filePath) {
         ui = new Ui();
         storage = new Storage(filePath);
